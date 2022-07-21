@@ -5,15 +5,18 @@ export default {
 </script>
 <script setup lang="ts">
 import { ref } from 'vue';
+import { toUpper } from '@/utils/upperCase';
 
 defineProps<{ msg: string }>();
 
 const count = ref(0);
+
+let message = 'Hello World';
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <p>{{ toUpper(message) }}</p>
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
