@@ -13,7 +13,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: path.resolve(__dirname, "src/entry.esm.ts"),
-            name: "MyLib",
+            name: "Cortex",
             // the proper extensions will be added
             fileName: "entry.esm",
         },
