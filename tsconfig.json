@@ -17,7 +17,11 @@
         "baseUrl": ".",
         "paths": {
             "@/*": ["src/*"]
-        }
+        },
+        "types": [
+          "cypress",
+          "./cypress/support"
+        ]
     },
     "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/components/components.ts"],
     "references": [{ "path": "./tsconfig.node.json" }]
