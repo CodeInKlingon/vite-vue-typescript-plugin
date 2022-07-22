@@ -1,4 +1,5 @@
 import * as components from './components/index';
+import './components'
 
 const myPlugin = {
   install(app: any, options: any) {

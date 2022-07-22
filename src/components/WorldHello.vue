@@ -6,7 +6,15 @@ export default {
 <script setup lang="ts">
 import { ref } from 'vue';
 
-defineProps<{ msg: string }>();
+// reactive destructure for defineProps()
+// default value is compiled to equivalent runtime option
+const props = withDefaults(defineProps<{
+  msg?: string
+  bar: number
+}>(),{
+  msg: 'hi there'
+})
+
 
 const count = ref(0);
 </script>

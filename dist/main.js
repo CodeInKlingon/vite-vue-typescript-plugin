@@ -1,104 +1,110 @@
-import { defineComponent as u, ref as d, openBlock as i, createElementBlock as p, Fragment as h, createElementVNode as t, toDisplayString as c, pushScopeId as m, popScopeId as v, createTextVNode as o } from "vue";
-const a = (e) => (m("data-v-92071cb7"), e = e(), v(), e), g = { class: "card" }, f = /* @__PURE__ */ a(() => /* @__PURE__ */ t("p", null, [
+import { defineComponent as d, ref as i, openBlock as p, createElementBlock as h, Fragment as f, createElementVNode as e, toDisplayString as a, unref as _, pushScopeId as m, popScopeId as v, createTextVNode as o } from "vue";
+function b(t) {
+  return t.toUpperCase();
+}
+const r = (t) => (m("data-v-493dfbbe"), t = t(), v(), t), k = { class: "card" }, y = /* @__PURE__ */ r(() => /* @__PURE__ */ e("p", null, [
   /* @__PURE__ */ o(" Edit "),
-  /* @__PURE__ */ t("code", null, "components/HelloWorld.vue"),
+  /* @__PURE__ */ e("code", null, "components/HelloWorld.vue"),
   /* @__PURE__ */ o(" to test HMR ")
-], -1)), k = /* @__PURE__ */ a(() => /* @__PURE__ */ t("p", null, [
+], -1)), V = /* @__PURE__ */ r(() => /* @__PURE__ */ e("p", null, [
   /* @__PURE__ */ o(" Check out "),
-  /* @__PURE__ */ t("a", {
+  /* @__PURE__ */ e("a", {
     href: "https://vuejs.org/guide/quick-start.html#local",
     target: "_blank"
   }, "create-vue"),
   /* @__PURE__ */ o(", the official Vue + Vite starter ")
-], -1)), y = /* @__PURE__ */ a(() => /* @__PURE__ */ t("p", null, [
+], -1)), I = /* @__PURE__ */ r(() => /* @__PURE__ */ e("p", null, [
   /* @__PURE__ */ o(" Install "),
-  /* @__PURE__ */ t("a", {
+  /* @__PURE__ */ e("a", {
     href: "https://github.com/johnsoncodehk/volar",
     target: "_blank"
   }, "Volar"),
   /* @__PURE__ */ o(" in your IDE for a better DX ")
-], -1)), V = /* @__PURE__ */ a(() => /* @__PURE__ */ t("p", { class: "read-the-docs" }, "Click on the Vite and Vue logos to learn more", -1)), I = {
+], -1)), $ = /* @__PURE__ */ r(() => /* @__PURE__ */ e("p", { class: "read-the-docs" }, "Click on the Vite and Vue logos to learn more", -1)), H = {
   name: "hello-world"
-}, $ = /* @__PURE__ */ u({
-  ...I,
+}, C = /* @__PURE__ */ d({
+  ...H,
   props: {
     msg: null
   },
-  setup(e) {
-    const n = d(0);
-    return (s, l) => (i(), p(h, null, [
-      t("h1", null, c(e.msg), 1),
-      t("div", g, [
-        t("button", {
+  setup(t) {
+    const l = i(0);
+    let s = "Hello World";
+    return (n, c) => (p(), h(f, null, [
+      e("h1", null, a(t.msg), 1),
+      e("p", null, a(_(b)(_(s))), 1),
+      e("div", k, [
+        e("button", {
           type: "button",
-          onClick: l[0] || (l[0] = (_) => n.value++)
-        }, "count is " + c(n.value), 1),
-        f
+          onClick: c[0] || (c[0] = (q) => l.value++)
+        }, "count is " + a(l.value), 1),
+        y
       ]),
-      k,
-      y,
-      V
+      V,
+      I,
+      $
     ], 64));
   }
 });
-const b = (e, n) => {
-  const s = e.__vccOpts || e;
-  for (const [l, _] of n)
-    s[l] = _;
+const g = (t, l) => {
+  const s = t.__vccOpts || t;
+  for (const [n, c] of l)
+    s[n] = c;
   return s;
-}, H = /* @__PURE__ */ b($, [["__scopeId", "data-v-92071cb7"]]), r = (e) => (m("data-v-ad52b3b2"), e = e(), v(), e), j = { class: "card" }, x = /* @__PURE__ */ r(() => /* @__PURE__ */ t("p", null, [
+}, j = /* @__PURE__ */ g(C, [["__scopeId", "data-v-493dfbbe"]]), u = (t) => (m("data-v-ca6ea87c"), t = t(), v(), t), x = { class: "card" }, E = /* @__PURE__ */ u(() => /* @__PURE__ */ e("p", null, [
   /* @__PURE__ */ o(" Edit "),
-  /* @__PURE__ */ t("code", null, "components/WorldHello.vue"),
+  /* @__PURE__ */ e("code", null, "components/WorldHello.vue"),
   /* @__PURE__ */ o(" to test HMR ")
-], -1)), C = /* @__PURE__ */ r(() => /* @__PURE__ */ t("p", null, [
+], -1)), S = /* @__PURE__ */ u(() => /* @__PURE__ */ e("p", null, [
   /* @__PURE__ */ o(" Check out "),
-  /* @__PURE__ */ t("a", {
+  /* @__PURE__ */ e("a", {
     href: "https://vuejs.org/guide/quick-start.html#local",
     target: "_blank"
   }, "create-vue"),
   /* @__PURE__ */ o(", the official Vue + Vite starter ")
-], -1)), E = /* @__PURE__ */ r(() => /* @__PURE__ */ t("p", null, [
+], -1)), W = /* @__PURE__ */ u(() => /* @__PURE__ */ e("p", null, [
   /* @__PURE__ */ o(" Install "),
-  /* @__PURE__ */ t("a", {
+  /* @__PURE__ */ e("a", {
     href: "https://github.com/johnsoncodehk/volar",
     target: "_blank"
   }, "Volar"),
   /* @__PURE__ */ o(" in your IDE for a better DX ")
-], -1)), S = /* @__PURE__ */ r(() => /* @__PURE__ */ t("p", { class: "read-the-docs" }, "Click on the Vite and Vue logos to learn more", -1)), W = {
+], -1)), D = /* @__PURE__ */ u(() => /* @__PURE__ */ e("p", { class: "read-the-docs" }, "Click on the Vite and Vue logos to learn more", -1)), w = {
   name: "world-hello"
-}, D = /* @__PURE__ */ u({
-  ...W,
+}, O = /* @__PURE__ */ d({
+  ...w,
   props: {
-    msg: null
+    msg: { default: "hi there" },
+    bar: null
   },
-  setup(e) {
-    const n = d(0);
-    return (s, l) => (i(), p(h, null, [
-      t("h1", null, c(e.msg), 1),
-      t("div", j, [
-        t("button", {
+  setup(t) {
+    const l = i(0);
+    return (s, n) => (p(), h(f, null, [
+      e("h1", null, a(t.msg), 1),
+      e("div", x, [
+        e("button", {
           type: "button",
-          onClick: l[0] || (l[0] = (_) => n.value++)
-        }, "count is " + c(n.value), 1),
-        x
+          onClick: n[0] || (n[0] = (c) => l.value++)
+        }, "count is " + a(l.value), 1),
+        E
       ]),
-      C,
-      E,
-      S
+      S,
+      W,
+      D
     ], 64));
   }
 });
-const w = /* @__PURE__ */ b(D, [["__scopeId", "data-v-ad52b3b2"]]), O = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const M = /* @__PURE__ */ g(O, [["__scopeId", "data-v-ca6ea87c"]]), N = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  HelloWorld: H,
-  WorldHello: w
-}, Symbol.toStringTag, { value: "Module" })), N = {
-  install(e, n) {
-    Object.entries(O).forEach(([s, l]) => {
-      e.component(l.name, l);
+  HelloWorld: j,
+  WorldHello: M
+}, Symbol.toStringTag, { value: "Module" })), P = {
+  install(t, l) {
+    Object.entries(N).forEach(([s, n]) => {
+      t.component(n.name, n);
     });
   }
 };
 export {
-  N as default
+  P as default
 };
