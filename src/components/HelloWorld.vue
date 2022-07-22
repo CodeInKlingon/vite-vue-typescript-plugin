@@ -5,7 +5,7 @@ export default {
 </script>
 <script setup lang="ts">
 import { ref } from "vue";
-import { toUpper } from "@/utils/upperCase";
+import { toUpper } from "../utils/upperCase";
 
 defineProps<{ msg: string }>();
 
