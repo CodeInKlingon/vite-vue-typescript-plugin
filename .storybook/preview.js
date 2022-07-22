@@ -1,3 +1,6 @@
+import { app } from '@storybook/vue3';
+import {default as library } from '../src/entry.esm';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +10,10 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [(story) => ({
+  components: { story },
+  template: '<cb-app><story /></cb-app>'
+})];
+
+app.use( library );
